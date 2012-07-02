@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)animationRectButton:(id)sender;
+- (IBAction)animationImageButton:(id)sender;
+
+- (void)animateWithRect;
+- (void)animateWithImage;
+- (void)animationDidStop;
+- (void)animationDidStop:(NSString *)animationID  finished:(BOOL)finished  context:(void *)context;
 
 @end
